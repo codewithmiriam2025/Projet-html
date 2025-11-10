@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>CV Moderne - Miriame TABE BETE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ==== RESET GLOBAL ==== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f3f6fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .cv-container {
+      max-width: 1100px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 14px;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    /* ==== COLONNE GAUCHE ==== */
+    .sidebar {
+      background: linear-gradient(180deg, #0f4471, #1a6cb3);
+      color: #fff;
+      padding: 40px 30px;
+    }
+
+    .photo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .photo img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      font-size: 22px;
+      margin-top: 15px;
+      font-weight: 700;
+    }
+
+    .sidebar h3 {
+      margin-top: 40px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #aad4ff;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 5px;
+    }
+
+    .contact-info, .skills, .languages {
+      margin-top: 20px;
+    }
+
+    .contact-info li, .skills li, .languages li {
+      list-style: none;
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    .skills li span, .languages li span {
+      display: block;
+      height: 6px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 5px;
+      margin-top: 5px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skills li span::after, .languages li span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 6px;
+      background: #fff;
+      border-radius: 5px;
+    }
+
+    /* Barres de progression */
+    .skills li:nth-child(1) span::after { width: 90%; }
+    .skills li:nth-child(2) span::after { width: 85%; }
+    .skills li:nth-child(3) span::after { width: 80%; }
+    .skills li:nth-child(4) span::after { width: 75%; }
+    .languages li:nth-child(1) span::after { width: 100%; }
+    .languages li:nth-child(2) span::after { width: 85%; }
+
+    /* ==== COLONNE DROITE ==== */
+    .main {
+      padding: 40px 50px;
+    }
+
+    .name-title {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+
+    .name-title h1 {
+      font-size: 30px;
+      color: #0f4471;
+      font-weight: 700;
+    }
+
+    .name-title h4 {
+      color: #666;
+      font-weight: 400;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      color: #0f4471;
+      font-size: 18px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .section h3::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 40px;
+      height: 3px;
+      background: #1a6cb3;
+      border-radius: 2px;
+    }
+
+    .section p {
+      margin-top: 10px;
+      color: #444;
+    }
+
+    .timeline {
+      margin-top: 15px;
+      border-left: 2px solid #ddd;
+      padding-left: 20px;
+    }
+
+    .timeline-item {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background: #1a6cb3;
+      border-radius: 50%;
+    }
+
+    .timeline-item h4 {
+      color: #222;
+      font-weight: 600;
+    }
+
+    .timeline-item span {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      margin-top: 30px;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+    }
+
+    @media (max-width: 900px) {
+      .cv-container {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+
+    <!-- ==== COLONNE GAUCHE ==== -->
+    <aside class="sidebar">
+      <div class="photo">
+        <img src="./img/20250714_163638.jpg" alt="Photo de Miriame">
+      </div>
+      <h2>Miriame TABE BETE</h2>
+
+      <h3>Contact</h3>
+      <ul class="contact-info">
+        <li>📞 +229 67 12 34 56</li>
+        <li>✉️ miriame.tabe@example.com</li>
+        <li>📍 Missérété, Bénin</li>
+        <li>🔗 linkedin.com/in/miriame-tabe</li>
+      </ul>
+
+      <h3>Compétences</h3>
+      <ul class="skills">
+        <li>Gestion de projets IT <span></span></li>
+        <li>Développement web <span></span></li>
+        <li>Analyse de données <span></span></li>
+        <li>Travail en équipe <span></span></li>
+      </ul>
+
+      <h3>Langues</h3>
+      <ul class="languages">
+        <li>Français <span></span></li>
+        <li>Anglais <span></span></li>
+      </ul>
+    </aside>
+
+    <!-- ==== COLONNE DROITE ==== -->
+    <main class="main">
+      <div class="name-title">
+        <h1>Étudiante en Informatique de Gestion</h1>
+        <h4>Future experte en Systèmes d’Information et Transformation Digitale</h4>
+      </div>
+
+      <div class="section">
+        <h3>Profil</h3>
+        <p>
+          Étudiante dynamique et passionnée par les technologies numériques, la gestion de projets et le développement web. 
+          Curieuse, organisée et motivée, j’ai déjà effectué plusieurs stages dans des structures technologiques innovantes 
+          où j’ai pu développer mes compétences en collaboration, créativité et résolution de problèmes.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Formation</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Licence 2 en Informatique de Gestion – Pigier Bénin</h4>
+            <span>2024 – Présent</span>
+          </div>
+          <div class="timeline-item">
+            <h4>Baccalauréat – Lycée Technique de Tchaourou</h4>
+            <span>2022</span>
+          </div>
+          <div class="timeline-item">
+            <h4>BEPC – Collège Espoir Plus</h4>
+            <span>2018</span>
+          </div>
+          <div class="timeline-item">
+            <h4>CEP – Complexe Scolaire Nelson Mandela</h4>
+            <span>2014</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Expériences & Stages</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Stage – Wasangari_Labs</h4>
+            <span>2025</span>
+            <p>Participation à des projets de développement web et accompagnement d’équipes techniques dans la mise en place de solutions digitales.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Stage – Cabro Group</h4>
+            <span>2024</span>
+            <p>Contribution à la conception de supports numériques et aide à la gestion de bases de données clients.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Stage – EtriLabs</h4>
+            <span>2023</span>
+            <p>Initiation aux outils collaboratifs, innovation numérique et gestion de projets informatiques en startup.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Centres d’intérêt</h3>
+        <p>Lecture, innovation technologique, création de contenus, mentorat des jeunes, voyages culturels.</p>
+      </div>
+
+      <div class="footer">
+        &copy; 2025 Miriame TABE BETE — Tous droits réservés.
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>
