@@ -1,0 +1,38 @@
+ .flex{
+    display: flex;
+     padding: 20px 20px 20px 20px;
+     width: 60%;
+     box-shadow: 5px 5px 5px black;
+     border: 1px solid black; 
+     margin-left: 250px;
+     margin-top: 100px;
+    
+ }
+ table{
+    justify-content: space-around;
+    border: 5px solid silver;
+    box-shadow: 1px 1px 1px black;
+    margin: 25px;
+}
+.table td{
+  border: 1px solid black;  
+  padding: 20px 20px 20px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(138, 199, 47);
+  color: red;
+}
+.table_2 td{
+  border: 1px solid black;  
+  padding: 20px 20px 20px 20px;
+  font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(138, 199, 47);
+  color: red;
+}
+.table_2 thead{
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+td p{
+  rotate: 30deg;
+}

@@ -1,0 +1,63 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* === Topbar === */
+.topbar {
+  display: flex;
+  height: 165px;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #030d1d, #0f518f);
+  color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.topbar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.topbar-section img {
+  width: 60px;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.topbar-section a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.topbar-section a:hover {
+  color: #ffc107;
+}
+
+.topbar .center h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+/* === Layout général === */
+.container {
+  display: flex;
+  min-height: calc(100vh - 100px); /* en dessous du header */
+}
+

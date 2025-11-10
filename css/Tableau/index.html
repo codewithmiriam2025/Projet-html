@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background-image: url("image1\ \(4\).jpg");
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* Flex layout for tables */
+.tables {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Wrapper for each table */
+.table-wrapper {
+  background: linear-gradient(90deg, #030d1d, #0f518f);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.table-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+/* Table styles */
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 200px;
+}
+
+.styled-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Highlighted header cell */
+.highlight {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+/* Center text */
+.center {
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tables {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-wrapper {
+    width: 90%;
+  }
+}
+
+  </style>
+  <title>Exercice Tableau</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Exercice tableau (1, 2, 3)</h1>
+    
+    <div class="tables">
+      <!-- Table 1 -->
+      <div class="table-wrapper">
+        <table class="styled-table">
+          <tr>
+            <td colspan="2" class="center highlight"><P style="rotate: 30deg;">RGL1</P></td>
+          </tr>
+          <tr>
+            <td>RGL2</td>
+            <td>RGL3</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Table 2 -->
+      <div class="table-wrapper">
+        <table class="styled-table">
+          <tr>
+            <td rowspan="2" style="rotate: 30deg;">RSM1</td>
+            <td>RM2</td>
+          </tr>
+          <tr>
+            <td>RM3</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Table 3 -->
+      <div class="table-wrapper">
+        <table class="styled-table">
+          <tr>
+            <td colspan="3" class="center">A</td>
+          </tr>
+          <tr>
+            <td rowspan="2">B</td>
+            <td colspan="2" class="center">C</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>E</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Listes */
+ul, ol {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+.cercle {
+  list-style-type: circle;
+}
+
+.carre {
+  list-style-type: square;
+}
+
+.rien {
+  list-style-type: none;
+}
+
+.commence_a_zero {
+  list-style-type: decimal-leading-zero;
+}
+
+.lettres_minuscules {
+  list-style-type: lower-alpha;
+}
+
+.chiffres_romains {
+  list-style-type: upper-roman;
+}
+
+.lettres_grecques {
+  list-style-type: lower-greek;
+}
+
+/* Tableaux */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #0d6efd;
+  color: white;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.rouge {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+#vert {
+  background-color: #d4edda;
+  color: #155724;
+}

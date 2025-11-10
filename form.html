@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Souhait</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-light text-dark">
+
+<main class="container mt-5">
+    <form method="post" action="cible_formulaire.php" class="border rounded p-4 bg-white shadow-sm">
+
+        <!-- Coordonnées -->
+        <fieldset class="mb-4">
+            <legend class="h5" style="color: white;">Vos coordonnées</legend>
+
+            <div class="mb-3">
+                <label for="nom" class="form-label">Quel est votre nom ?</label>
+                <input type="text" name="nom" id="nom" class="form-control" tabindex="10" placeholder="Dupont" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="prenom" class="form-label">Quel est votre prénom ?</label>
+                <input type="text" name="prenom" id="prenom" class="form-control" tabindex="20" placeholder="Jean" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Quel est votre e-mail ?</label>
+                <input type="email" name="email" id="email" class="form-control" tabindex="30" placeholder="exemple@mail.com" required>
+            </div>
+        </fieldset>
+
+        <!-- Souhait -->
+        <fieldset>
+            <legend class="h5" style="color: white;">Votre souhait</legend>
+
+            <p style="color: white;">Faites un souhait que vous voudriez voir exaucé :</p>
+
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="souhait" id="riche" value="riche" tabindex="40">
+                <label class="form-check-label" for="riche">Être riche</label>
+            </div>
+
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="souhait" id="celebre" value="celebre" tabindex="50">
+                <label class="form-check-label" for="celebre">Être célèbre</label>
+            </div>
+
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="souhait" id="intelligent" value="intelligent" tabindex="60">
+                <label class="form-check-label" for="intelligent">Être <strong>encore</strong> plus intelligent</label>
+            </div>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="souhait" id="autre" value="autre" tabindex="70">
+                <label class="form-check-label" for="autre">Autre...</label>
+            </div>
+
+            <div class="mb-3">
+                <label for="precisions" class="form-label" style="color: white;">Précisez votre souhait :</label>
+                <textarea name="precisions" id="precisions" class="form-control" rows="4" tabindex="80" placeholder="Écrivez ici..."></textarea>
+            </div>
+        </fieldset>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary me-2">Envoyer</button>
+            <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+        </div>
+    </form>
+</main>
+
+</body>
+</html>

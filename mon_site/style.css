@@ -1,0 +1,31 @@
+.cont img{
+width: 300px;
+height : 296px;
+border-radius: 32px;
+box-shadow: 3px 3px 3px silver;
+border: 1px solid silver;
+}     
+.cont{
+ width: 85%;
+ height: 440px;
+background: linear-gradient(90deg, #030d1d, #0f518f);
+border:1px solid#0f518f;
+box-shadow : 3px 3px 3px #0f518f;
+border: 1px solid black;
+padding: 20px 20px 20px 20px;
+
+}
+
+.div{
+color: #196E0F;
+font-size : 25px;
+}
+.cont strong{
+    color: #e4dcee;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cont p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    color: white;
+}

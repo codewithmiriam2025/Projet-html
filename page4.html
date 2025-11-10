@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Listes en 3 colonnes Flexbox</title>
+  <style>
+    :root {
+      --violet: #f0d9ff;
+      --bg: #f4f5fa;
+      --text: #2c3e50;
+      --light: #ffffff;
+    }
+
+    body {
+      background-image: url("image1\ \(4\).jpg");
+      background-size: cover;
+      font-family: 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px;
+    }
+
+    h2 {
+      color: var(--violet);
+      border-left: 5px solid var(--violet);
+      padding-left: 15px;
+      margin-bottom: 30px;
+      font-size: 35px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    .colonne {
+      flex: 1 1 calc(33.33% - 30px);
+      background: linear-gradient(90deg, #030d1d, #0f518f);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      min-width: 250px;
+      color: white;
+    }
+    .colonne p{
+      color: white;
+    }
+    .colonne p em{
+      color: white;
+      font-size: 25px;
+    }
+    p {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    ul, ol {
+      margin: 0 0 20px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    ul.cercle {
+      list-style: circle;
+    }
+
+    ul.carre {
+      list-style: square;
+    }
+
+    ul.rien {
+      list-style: none;
+    }
+
+    ul.rien li::before {
+      content: "➤";
+      color: var(--violet);
+      margin-right: 8px;
+    }
+
+    ol.commence_a_zero {
+      list-style-type: decimal-leading-zero;
+    }
+
+    ol.lettres_minuscules {
+      list-style-type: lower-alpha;
+    }
+
+    ol.chiffres_romains {
+      list-style-type: upper-roman;
+    }
+
+    ol.lettres_grecques {
+      list-style-type: lower-greek;
+    }
+
+    @media screen and (max-width: 900px) {
+      .colonne {
+        flex: 1 1 100%;
+      }
+    }
+
+    em {
+      color: #888;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Exemples de Listes</h2>
+
+  <div class="container">
+
+    <div class="colonne">
+      <p>Liste par défaut (disc) :</p>
+      <ul>
+        <li>Liste</li>
+        <li>à</li>
+        <li>puces</li>
+      </ul>
+
+      <p><em>circle</em> :</p>
+      <ul class="cercle">
+        <li>Liste</li>
+        <li>à</li>
+        <li>puces</li>
+      </ul>
+
+      <p><em>square</em> :</p>
+      <ul class="carre">
+        <li>Liste</li>
+        <li>à</li>
+        <li>puces</li>
+      </ul>
+
+      <p><em>none</em> :</p>
+      <ul class="rien">
+        <li>Liste</li>
+        <li>à</li>
+        <li>puces</li>
+      </ul>
+    </div>
+
+    <div class="colonne">
+      <p>Liste ordonnée (decimal) :</p>
+      <ol>
+        <li>Un</li>
+        <li>Deux</li>
+        <li>Trois</li>
+        <li>Quatre</li>
+      </ol>
+
+      <p><em>decimal-leading-zero</em> :</p>
+      <ol class="commence_a_zero">
+        <li>Un</li>
+        <li>Deux</li>
+        <li>Trois</li>
+        <li>Quatre</li>
+      </ol>
+    </div>
+
+    <div class="colonne">
+      <p><em>lower-alpha</em> :</p>
+      <ol class="lettres_minuscules">
+        <li>Un</li>
+        <li>Deux</li>
+        <li>Trois</li>
+        <li>Quatre</li>
+      </ol>
+
+      <p><em>upper-roman</em> :</p>
+      <ol class="chiffres_romains">
+        <li>Un</li>
+        <li>Deux</li>
+        <li>Trois</li>
+        <li>Quatre</li>
+      </ol>
+
+      <p><em>lower-greek</em> :</p>
+      <ol class="lettres_grecques">
+        <li>Un</li>
+        <li>Deux</li>
+        <li>Trois</li>
+        <li>Quatre</li>
+      </ol>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <style>
+        /* === Sidebar === */
+.sidebar {
+  width: 100px;
+  height: 400px;
+    background: linear-gradient(90deg, #030d1d, #0f518f);
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+
+}
+
+.sidebar a {
+position: relative;
+margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 50;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid white;
+  width: 200px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.sidebar a:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* === Contenu principal === */
+.content {
+  flex: 1;
+  padding: 50px;
+  background-color: #fefefe;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 15px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+
+    </style>
+<nav class="sidebar">
+    <ul>
+        <li>
+            <a href="page_1.html" target="contenu">Présentation</a>
+            <a href="page2.html" target="contenu">Texte</a>
+            <a href="page4.html" target="contenu">Listes</a>
+            <a href="./css/Tableau/index.html" target="contenu">Tableaux</a>
+            <a href="form.html" target="contenu">Formulaire</a>
+            <a href="page_1.html" target="contenu">CV</a>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>

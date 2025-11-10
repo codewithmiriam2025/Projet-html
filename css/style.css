@@ -1,0 +1,230 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+border: 1px solid sliver;
+}
+.flex_1{
+display: flex;
+width: 43.50em;
+padding: 10px 10px 5px 19px;
+border: 1px solid silver;
+margin-top:10px;
+bottom: 3px black;
+box-shadow: 1px 1px 1px silver;
+}
+.flex_2{
+justify-content: space-around;
+margin:25px;
+margin: 30px;
+}
+.contenair{
+width: 43em;
+padding: 3px 19px 19px 19px;
+background-color: aliceblue;
+border: 1px solid silver;
+margin-top:5px;
+margin-left:40px;
+bottom: 3px black;
+box-shadow: 1px 1px 1px silver;
+}
+.formation ul li{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Loisir ul li{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+.contenair h1{
+font-size: 30px;
+font-family: 'Courier New', Courier, monospace;
+color: rgb(8, 8, 104);
+}
+.contenair h2{
+font-size: 30px;
+font-family: 'Courier New', Courier, monospace;
+color: rgb(8, 8, 104);
+}
+.contenair span{
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.person img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.flex_3 a{
+    text-decoration: none;
+    font-size: 15px;
+font-family: 'Courier New', Courier, monospace;
+color: rgb(8, 8, 104);
+}
+.flex_4 h2{
+    color: rgb(8, 8, 104);
+      font-size: 15px;
+font-family: 'Courier New', Courier, monospace;  
+}
+.flex_3 img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+.flex_4 h2 a{
+    color: rgb(8, 8, 104);
+      font-size: 15px;
+font-family: 'Courier New', Courier, monospace;  
+text-decoration: none;
+}
+form{
+    width: 50%;
+    width: 700px;
+    box-shadow: 3px 3px 3px black;
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+    background: linear-gradient(90deg, #030d1d, #0f518f);
+}
+form label{
+    font-size: 18px;
+    font-family: arial bold;
+    color: white;
+}
+form legend{
+    font-size: 25px;
+    font-family: arial bold;
+    text-align: center;
+    color: white;
+}
+form .input_1{
+    width: 60%;
+    height: 30px;
+}
+/* Import d'une jolie typo Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fff);
+    color: #333;
+    padding: 20px;
+}
+
+/* Conteneur du formulaire */
+form {
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #0d6efd;
+}
+
+/* Fieldsets */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #0d6efd;
+}
+
+/* Inputs et Textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.2);
+    outline: none;
+}
+
+/* Radio boutons */
+.form-check-input {
+    transition: transform 0.2s;
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.form-check-input:hover {
+    transform: scale(1.1);
+}
+
+/* Boutons */
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5c636a;
+}
+
+form {
+    animation: fadeIn 0.8s ease-in-out both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
